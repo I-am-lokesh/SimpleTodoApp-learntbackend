@@ -9,7 +9,7 @@ mongoose
     dbName: "BackendApi",
   })
   .then((data) => {
-    console.log("connected to database");
+    console.log(`connected to database ${data.connection.host}`);
   })
   .catch((err) => {
     console.log(err);
